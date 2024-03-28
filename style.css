@@ -1,0 +1,45 @@
+body {
+  background:  #050210;
+  
+}
+.hoop {
+  width:300px;
+  height: 300px;
+  border:30px solid;
+  border-radius: 50%;
+  position: absolute;
+  border-color:#55fb9f #b97aff #55fb9f #fb5dad;
+  animation:rotateHoop 1s linear infinite;
+  background-color: linear-gradient(#55fb9f, #b97aff, #55fb9f, #fb5dad)
+}
+
+  @keyframes rotateHoop {
+    0% {
+      border-color: #55fb9f; 
+      
+    }
+    33.33% {
+      border-color: #b97aff; 
+    }
+    66.66% {
+      border-color: #55fb9f; 
+    }
+    100% {
+      border-color: #fb5dad;
+    }
+
+  }
+
+@keyframes rotateHoop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hoop-color {
+
+}
+
